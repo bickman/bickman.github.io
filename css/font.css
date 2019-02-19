@@ -1,12 +1,12 @@
 ﻿/*声明 WebFont*/
 @font-face {
   font-family: 'FZCHAOZYTJW';
-  src: url('../font/FZCHAOZYTJW.eot');
+  src: url('font/FZCHAOZYTJW.eot');
   src:
-    url('../font/FZCHAOZYTJW.eot?#font-spider') format('embedded-opentype'),
-    url('../font/FZCHAOZYTJW.woff') format('woff'),
-    url('../font/FZCHAOZYTJW.ttf') format('truetype'),
-    url('../font/FZCHAOZYTJW.svg') format('svg');
+    url('font/FZCHAOZYTJW.eot?#font-spider') format('embedded-opentype'),
+    url('font/FZCHAOZYTJW.woff') format('woff'),
+    url('font/FZCHAOZYTJW.ttf') format('truetype'),
+    url('font/FZCHAOZYTJW.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
