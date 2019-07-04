@@ -1,65 +1,26 @@
 <!DOCTYPE html>
-<html>
-	<head>
-  	<title>Yilian</title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="css/w3.css">
-		<link rel="stylesheet" href="font.css">
-		<link rel="stylesheet" href="css/w3-theme-black.css">
-		<!--<link href="css/all.css" rel="stylesheet">-->
-		<script defer src="js/all.js" ></script>
-	</head>
-	<body id="home">
-		<!--navbar-->
-		<div class="w3-top w3-display-container w3-center" style="height:70px">
-			<div style="width:70%;" class="w3-cell-row w3-display-middle">
-				<a href="#" class="w3-cell w3-button w3-hover-none w3-text-grey w3-hover-text-white">主页</a>
-				<a href="#" class="w3-cell w3-button w3-hover-none w3-text-grey w3-hover-text-white">关于</a>
-				<a href="#" class="w3-cell"><img src="img/logo/yilian.svg" style="height:64px;"></a>
-				<a href="#" class="w3-cell w3-button w3-hover-none w3-text-grey w3-hover-text-white">作品</a>
-				<a href="#" class="w3-cell w3-button w3-hover-none w3-text-grey w3-hover-text-white">联系</a>
-			</div>
-		</div>
-		<div class="w3-display-container ">
-			<img class="mySlides" src="img/head01.jpg" style="width:100%">
-			<img class="mySlides" src="img/head02.jpg" style="width:100%">
-			<img class="mySlides" src="img/head03.jpg" style="width:100%">
-			<div class="w3-container w3-round-xlarge w3-display-middle w3-card-4 w3-center w3-text-white w3-hide-small">
-				<h1>head name </h1>
-				<hr>
-				<p>content</p>
-			</div>
-			<div class="w3-button w3-xlarge w3-display-left w3-hover-none w3-text-grey w3-hover-text-white" onclick="plusDivs(-1)">&#10094;</div>
-			<div class="w3-button w3-xlarge w3-display-right w3-hover-none w3-text-grey w3-hover-text-white" onclick="plusDivs(1)">&#10095;</div>
-		</div>
-		<script>
-			function showNav() {
- 			  var x = document.getElementById("nav-hide");
-  			if (x.className.indexOf("w3-show") == -1) {
-   			  x.className = x.className.replace("w3-hide","w3-show");
- 			  }
-				else{
-   		 	  x.className = x.className.replace("w3-show", "w3-hide");
- 			  }
-			}
-			var slideIndex = 1;
-			showDivs(slideIndex);
+  <html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <title>Jack's HOMEPAGE</title>
+    <link rel="icon" type="image/icon"  href="image/bookmark.ico">
+    <link rel = "stylesheet" type="text/css" href="pixel.css">
+  </head>
 
-			function plusDivs(n) {
-				showDivs(slideIndex += n);
-			}
-
-			function showDivs(n) {
-				var i;
-				var x = document.getElementsByClassName("mySlides");
-				if (n > x.length) {slideIndex = 1}
-				if (n < 1) {slideIndex = x.length}
-				for (i = 0; i < x.length; i++) {
-					x[i].style.display = "none";
-				}
-				x[slideIndex-1].style.display = "block";
-			}
-		</script>
-	</body>
+  <body>
+    <div class="center">
+        <img src="image/bookmark1.png" height="48">
+        <img src="image/homepage3.png" alt="HOMEPAGE" height="64">
+        <img src="image/bookmark1.png" height="48">
+        <form id="baiduSearch" action="https://www.baidu.com/s" method="GET">
+          <input type="text" name="wd" placeholder="baidu Search">
+          <input type="submit" value="baidu">
+        </form>
+        <form id="googleSearch" action="https://www.google.com/search" method="GET">
+          <input type = "text" name="q" placeholder="Google Search"> 
+          <input type="submit" value="google">
+        </form>
+    </div>
+    
+  </body>
 </html>
